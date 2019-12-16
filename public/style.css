@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 100vw;
+  height: 100vh;
+  background-image: -webkit-gradient(
+      linear,
+      left top, right top,
+      from(rgba(0, 0, 0, 0.3)),
+      to(rgba(0, 0, 0, 0.3))
+    ),
+    url(./img/clear.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(./img/clear.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.weekDay {
+  width: 14.28%;
+}
+
+#monthAndYear {
+  width: 60%;
+}
+
+#displayMonth,
+#displayYear {
+  cursor: pointer;
+}
+
+.btn-month {
+  width: 25%;
+  margin: 2%;
+}
+
+.calendar {
+    min-height: 45vh;
+}
+
+.events {
+    min-height: 40vh;
+    max-height: 40vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.events::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+
+.dayCell:hover {
+    background: #17a2b8;
+    color: #fff;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+#clock {
+  font-family: monospace;
+}
+
+
+i {
+  cursor: pointer;
+}
+
+.txt-shad {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+section {
+  height: 100vh;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+}
+
+table { 
+  border-spacing: 5px;
+  border-collapse: separate;
+}
