@@ -58,12 +58,12 @@ async function getWeather() {
           data.weather[0].icon
         }@2x.png">
         <div class="h3">
-            <span class="txt-shad text-uppercase">${data.name}</span>
+            <span class="txt-shad h5 text-uppercase">${data.name}</span>
             <sup>
                 <i id="changeLocBtn" class="txt-shad btn btn-sm text-primary fas fa-edit" data-toggle="modal" data-target="#locationModal"></i>          
             </sup>
         </div>
-        <h2 class="txt-shad">${parseFloat(data.main.temp.toFixed(1))}&deg;C</h2>
+        <h2 class="txt-shad h5">${parseFloat(data.main.temp.toFixed(1))}&deg;C</h2>
         `;
   } else {
     throw new Error(response.status);

@@ -25,7 +25,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 .weekDay {
@@ -69,11 +68,6 @@ body {
     cursor: pointer;
 }
 
-#clock {
-  font-family: monospace;
-}
-
-
 i {
   cursor: pointer;
 }
@@ -91,4 +85,14 @@ section {
 table { 
   border-spacing: 5px;
   border-collapse: separate;
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 10px;
+  }
+  table { 
+    border-spacing: 1px;
+    border-collapse: separate;
+  }
 }
